@@ -22,10 +22,18 @@ main {
 a:hover {
     text-decoration: none;
     opacity: 0.95;
+    font-weight: 700;
+    color: #fff;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, input, div, textarea, label {
+a {
     margin: 0;
+    font-weight: 900;
+}
+
+h1, h2, h3, h4, h5, h6, p, input, div, textarea, label {
+    margin: 0;
+
 }
 
 h2 { font-size: 28px; }
@@ -79,10 +87,10 @@ header {
     vertical-align: middle;
 }
 
-nav { background: #262d33; }
+nav { background: #0e6fc3; }
 
 nav li a { 
-    color: #AFB2B6;
+    color: black;
     display: inline-block;
     padding: 10px 10px;
 }
@@ -125,3 +133,28 @@ footer a { color: cornsilk; }
 }
 
 /* End Page Content */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
